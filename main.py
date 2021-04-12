@@ -1,9 +1,9 @@
 def main():
-    print(u(2, 1200))
+    print(u(2, 0.5))
 
 
 def u(x: int ,r: float):
-    return x*r
+    return x**(1-r)
 
 
 main()
