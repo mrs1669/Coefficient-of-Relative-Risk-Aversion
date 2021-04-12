@@ -1,5 +1,3 @@
-import sympy
-
 def main():
     #sympy.var('r')
     #print(sympy.solve(DEu(r, 0.1), r))
