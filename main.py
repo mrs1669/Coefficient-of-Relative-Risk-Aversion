@@ -8,6 +8,6 @@ def Eu(x1: int, x2: int, r: float, p: float):
     return p*u(x1,r)+(1-p)*u(x2,r)
 
 def DEu(r: float, p: float):
-    return
+    return Eu(200, 160, r, p)-Eu(385, 10, r, p)
 
 main()
