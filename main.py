@@ -3,7 +3,7 @@ def main():
 
 
 def u(x: int ,r: float):
-    return x**(1-r)
+    return (x**(1-r))/(1-r)
 
 
 main()
