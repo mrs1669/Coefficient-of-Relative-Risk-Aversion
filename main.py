@@ -14,4 +14,7 @@ def Eu(x1: int, x2: int, r: float, p: float):
 def DEu(r: float, p: float):
     return Eu(200, 160, r, p)-Eu(385, 10, r, p)
 
+def solve(r: float):
+    return
+
 main()
