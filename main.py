@@ -7,4 +7,7 @@ def u(x: int ,r: float):
 def Eu(x1: int, x2: int, r: float, p: float):
     return p*u(x1,r)+(1-p)*u(x2,r)
 
+def DEu(r: float, p: float):
+    return
+
 main()
