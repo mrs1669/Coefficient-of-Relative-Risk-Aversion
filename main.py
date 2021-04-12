@@ -1,7 +1,11 @@
-def main():
-    print(DEu(0.5, 0.5))
+import sympy
 
-def u(x: int ,r: float):
+def main():
+    #sympy.var('r')
+    #print(sympy.solve(DEu(r, 0.1), r))
+    print(DEu(-1.73, 0.1))
+
+def u(x: int, r: float):
     return (x**(1-r))/(1-r)
 
 def Eu(x1: int, x2: int, r: float, p: float):
