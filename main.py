@@ -15,6 +15,8 @@ def DEu(r: float, p: float):
     return Eu(200, 160, r, p)-Eu(385, 10, r, p)
 
 def solve(r: float):
+    min: float = -10.0
+    max: float = 10.0
     return
 
 main()
