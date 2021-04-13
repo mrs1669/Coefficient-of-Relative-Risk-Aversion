@@ -1,7 +1,14 @@
+from scipy import optimize
+
 def main():
     print('選択肢Bにスイッチした組番号 高い賞金が当たる確率p 閾値相対的リスク回避度r')
     for p in range(1, 10, 1):
         print('            ', p+1, '            |        ', p/10, '        |         ', solve(p/10))
+    
+    print('scipy optimizeを用いて求めたp=0.1時のrの値とDEu')
+    opt = optimize.fsolve(a, 0)
+    print('r=', opt)
+    print('DEu=', DEu(opt, 0.1))
 
 def u(x: int, r: float):
     return (x**(1-r))/(1-r)
@@ -11,6 +18,9 @@ def Eu(x1: int, x2: int, r: float, p: float):
 
 def DEu(r: float, p: float):
     return Eu(200, 160, r, p)-Eu(385, 10, r, p)
+
+def a(r: float):
+    return DEu(r, 0.1)
 
 def solve(p: float):
     min: float = -10.0
